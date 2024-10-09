@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    display: flex;              
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;        
+    height: 100vh;             
+    text-align: center;         
+}
+
+.logo {
+    width: 250px;                
+    height: 60px;               
+    border-radius: 50%;          
+    object-fit: cover;           
+    transition: transform 0.3s;  
+}
+
+.logo:hover {
+    transform: scale(1.1);       
+}
+
+.highlight {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8); 
+    transition: box-shadow 0.3s ease-in-out; 
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+}
+
+nav {
+    background: #444;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Add hover effect for navigation links */
+nav ul li a:hover {
+    color: yellow; /* Change text color to yellow on hover */
+   
+}
+
+main {
+    padding: 2em;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Flexbox Styles */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.flexbox-demo{
+    text-align: center;
+}
+.flex-item {
+    background-color: #f39c12;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    height: 350px;
+    flex: 1;
+    margin: 10px;
+    transition: background-color 0.3s ease; /* Ensure background transition */
+}
+
+.flex-item:hover {
+    background-color: #e74c3c;
+}
+
+/* Positioning Styles */
+.animation-demo{
+    text-align: center;
+}
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: relative;
+    animation: slide 5s infinite;
+}
+.ads
+{text-align: center;}
+/* Animation Keyframes */
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Advertisement Boxes */
+.ads {
+    margin-top: 2em;
+}
+
+.ad-box {
+    background-color: #2ecc71;
+    padding: 20px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+}
